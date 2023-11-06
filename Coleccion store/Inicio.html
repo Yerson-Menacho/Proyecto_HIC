@@ -7,13 +7,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="estilos.css" />
+      <link rel="stylesheet" href="CSS/estilos.css" />
       <title>Inicio</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="JS/utils.js"></script>
 </head>
 <body>
-    
-    <div class="superio">        
+    <div class="superio">
             <img class="logo" src="imagen/Store.png" alt="">
         
         <div>
@@ -28,11 +28,11 @@
           </button>
         </div>
   
-        <button class="login-button">
+        <button class="login-button" data-url="PAGES/Login.html">
           <i class="fas fa-user"></i> Iniciar Sesión
         </button>
   
-        <button class="caritocompras">
+        <button class="caritocompras" data-url="PAGES/Car.html">
           <i class="fas fa-shopping-cart"></i> Mi carro
         </button>
     </div>
@@ -43,7 +43,7 @@
             <img src="imagen/naruto.png" alt="Imagen de la colección 1" />
             <p>Descripción de la colección 1.</p>
             <ul class="menu">
-                <button><a href="Detalles.html">Ver Detalles</a></button>
+                <button class="detailProd" data-url="PAGES/Detalles.html">Ver Detalles</button>
             </ul>
         </section>
         <section class="coleccion">
@@ -51,7 +51,7 @@
             <img src="imagen/naruto.png" alt="Imagen de la colección 2" />
             <p>Descripción de la colección 2.</p>
             <ul class="menu">
-                <button><a href="Detalles.html">Ver Detalles</a></button>
+              <button class="detailProd" data-url="PAGES/Detalles.html">Ver Detalles</button>
             </ul>
         </section>   
         <section class="coleccion">
