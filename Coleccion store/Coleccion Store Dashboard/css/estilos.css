@@ -1,28 +1,27 @@
-
-
-/* GENERALES */
-*{
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Tipografía */
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #dfe9f5;
-}
-
-.aside{
+/* Menú Lateral */
+.aside {
     height: 100vh;
     width: 300px;
     padding: 10px;
-    background-color: cornflowerblue;    
+    background-color: cornflowerblue;
     color: #fff;
-    position:  fixed;
+    position: fixed;
     transition: all .4s ease;
 }
 
-.head{
+.head {
     display: flex;
     width: 50px;
     align-items: center;
@@ -31,26 +30,26 @@ body {
     margin-bottom: 30px;
 }
 
-.head img{
+.head img {
     width: 50px;
     border-radius: 50%;
 }
 
-.head i{
+.head i {
     font-size: 30px;
     cursor: pointer;
 }
 
-.profile{
+.profile {
     display: flex;
     align-items: center;
 }
 
-.profile img{
+.profile img {
     margin-right: 10px;
 }
 
-.options div{
+.options div {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -60,28 +59,79 @@ body {
     font-size: 1.1rem;
 }
 
-.options div:hover{
-    background-color: rgba(255,255,255,0.254);
-    transition: all .4s ease-in-out;    
+.options div:hover {
+    background-color: rgba(255, 255, 255, 0.254);
+    transition: all .4s ease-in-out;
 }
 
-.options i{
+.options i {
     font-size: 1.4rem;
     margin-right: 10px;
 }
 
-/*modifica al cerrar el menu*/
-
-.aside.active{
+.aside.active {
     width: 70px;
     transition: all .4s ease;
 }
 
 .aside.active .option,
-.aside.active .profile{
+.aside.active .profile {
     display: none;
 }
 
-.aside.active .head i{
+.aside.active .head i {
     margin: auto;
+}
+
+
+.main {
+    margin-left: 300px; /* Ancho inicial del menú cerrado */
+    transition: 0.4s;
+}
+
+.aside.active + .main {
+    margin-left: 70px; /* Ancho del menú abierto */
+    transition: 0.4s;
+}
+
+/* Contenido Principal */
+.container {
+    /*border: black 1px solid;*/
+    width: 100%;
+}
+
+
+/* Estilos FOOTER*/
+.footer {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Contenido del Footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilos del Main */
+
+.main__title {
+    text-align: center;
+}
+
+.main__greeting h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main__greeting p {
+    font-size: 1.2rem;
 }
