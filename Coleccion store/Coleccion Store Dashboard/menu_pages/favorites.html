@@ -26,7 +26,7 @@
         <!-- Opciones -->
         <div class="options">
             <div class="menu-dash" data-url="../index.html">
-                <i class='bx bxs-dashboard'></i>   
+                <i class='bx bxs-home'></i> 
                 <span class="option">Inicio</span>             
             </div>
 
@@ -69,13 +69,47 @@
 
     <!-- CONTENIDO -->
     <section class="main">
-        <div class="container">
-            <div class="main__title">
-                <div class="main__greeting">
-                    <h1>Favoritos</h1>
-                    <p>Selecciona una opción del menú lateral</p>
+        <header>
+            <div class="header-icons">
+                <div class="search-container">
+                    <i class='bx bx-search'></i> <!-- Icono de buscar -->
                 </div>
-            </div>
+                <input type="text" placeholder="Buscar" />
+                <i class="bx bx-user"></i> <!-- Icono de usuario -->
+                <i class="bx bx-cog"></i> <!-- Icono de configuración -->
+                <i class="bx bx-bell"></i> <!-- Icono de notificación -->
+            </div> 
+        </header>
+        
+        <div class="container">
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Producto A</td>
+                            <td>$29.99</td>
+                            <td><button>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Producto B</td>
+                            <td>$19.99</td>
+                            <td><button>Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Producto C</td>
+                            <td>$39.99</td>
+                            <td><button>Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
             <br><br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br><br>
             

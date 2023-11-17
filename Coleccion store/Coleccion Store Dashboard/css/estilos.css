@@ -96,7 +96,6 @@ body {
 
 /* Contenido Principal */
 .container {
-    /*border: black 1px solid;*/
     width: 100%;
 }
 
@@ -135,3 +134,264 @@ body {
 .main__greeting p {
     font-size: 1.2rem;
 }
+
+
+/*bara superio*/
+header {
+    background-color: rgb(120, 159, 230);
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons i {
+    margin: 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="text"]::placeholder {
+    color: #ccc;
+}
+
+/*Usuario*/
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.admin-section {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.admin-button {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+/*analicis*/
+.sales-summary {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.summary-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.summary-box:hover {
+    transform: scale(1.05);
+}
+
+.summary-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.total-sales {
+    font-size: 30px;
+    color: #4CAF50;
+    margin: 0;
+}
+
+.total-sales:before {
+    content: '$';
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.analytic-line {
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    opacity: 0.7;
+}
+
+.analytic-info {
+    margin-top: 15px;
+    color: #777;
+}
+
+
+
+
+/*menu mensaje*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*Archivos*/
+nav {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.file-manager {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.folder {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.file {
+    display: inline-block;
+    margin: 10px;
+    color: #555;
+}
+
+/*configuracion*/
+.config-item {
+    margin-bottom: 20px;
+}
+
+.config-item label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.config-item input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.config-item button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.config-item button:hover {
+    background-color: #2980b9;
+}
+
+
+
+.container_1 {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1.h1 {
+    color: #333;
+  }
+  
+  p.p {
+    color: #555;
+  }
+  
+  a.a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  

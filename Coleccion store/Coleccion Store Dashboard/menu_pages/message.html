@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">    
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/mensaje.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    
+
     <title>Mensajes | Dashboard</title>
 </head>
 <body>
@@ -26,7 +33,7 @@
         <!-- Opciones -->
         <div class="options">
             <div class="menu-dash" data-url="../index.html">
-                <i class='bx bxs-dashboard'></i>   
+                <i class='bx bxs-home'></i>   
                 <span class="option">Inicio</span>             
             </div>
 
@@ -65,27 +72,78 @@
                 <span class="option">Configuración</span>
             </div>
         </div>
-    </aside>
+    </aside>      
 
-    <!-- CONTENIDO -->
+    <!-- CONTENIDO --> 
     <section class="main">
-        <div class="container">
-            <div class="main__title">
-                <div class="main__greeting">
-                    <h1>Mensajes</h1>
-                    <p>Selecciona una opción del menú lateral</p>
+        <header>
+            <div class="header-icons">
+                <div class="search-container">
+                    <i class='bx bx-search'></i> <!-- Icono de buscar -->
                 </div>
+                <input type="text" placeholder="Buscar" />
+                <i class="bx bx-user"></i> <!-- Icono de usuario -->
+                <i class="bx bx-cog"></i> <!-- Icono de configuración -->
+                <i class="bx bx-bell"></i> <!-- Icono de notificación -->
+            </div> 
+        </header>
+        
+        <h2>Tabla de Empleados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Autor</th>
+                    <th>Función</th>
+                    <th>Estado</th>
+                    <th>Empleado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Desarrollador</td>
+                    <td>Activo</td>
+                    <td>001</td>
+                </tr>
+                <!-- Puedes agregar más filas según sea necesario -->
+            </tbody>
+        </table>
+
+        <h2>Tabla de Proyectos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Proyecto</th>
+                    <th>Presupuesto</th>
+                    <th>Estado</th>
+                    <th>Terminación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Proyecto A</td>
+                    <td>$100,000</td>
+                    <td>En progreso</td>
+                    <td>2023-01-15</td>
+                </tr>
+                <tr>
+                    <td>Proyecto B</td>
+                    <td>$200,000</td>
+                    <td>Canselado</td>
+                    <td>2023-10-15</td>
+                </tr>
+                <!-- Puedes agregar más filas según sea necesario -->
+            </tbody>
+        </table>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer class="footer-content">
+            <div class="footer">
+                <h1>COLLECTION STORE</h1>
+                <p>Derechos reservados © Copyright 2023</p>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </footer>  
             
-            <footer class="footer-content">
-                <div class="footer">
-                    <h1>COLLECTION STORE</h1>
-                    <p>Derechos reservados © Copyright 2023</p>
-                </div>
-            </footer>
-        </div>
     </section>
 
     <script src="../js/menu.js"></script>

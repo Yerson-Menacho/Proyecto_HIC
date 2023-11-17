@@ -26,7 +26,7 @@
         <!-- Opciones -->
         <div class="options">
             <div class="menu-dash" data-url="../index.html">
-                <i class='bx bxs-dashboard'></i>   
+                <i class='bx bxs-home'></i>  
                 <span class="option">Inicio</span>             
             </div>
 
@@ -69,13 +69,48 @@
 
     <!-- CONTENIDO -->
     <section class="main">
-        <div class="container">
-            <div class="main__title">
-                <div class="main__greeting">
-                    <h1>Pedidos</h1>
-                    <p>Selecciona una opción del menú lateral</p>
+        <header>
+            <div class="header-icons">
+                <div class="search-container">
+                    <i class='bx bx-search'></i> <!-- Icono de buscar -->
                 </div>
-            </div>
+                <input type="text" placeholder="Buscar" />
+                <i class="bx bx-user"></i> <!-- Icono de usuario -->
+                <i class="bx bx-cog"></i> <!-- Icono de configuración -->
+                <i class="bx bx-bell"></i> <!-- Icono de notificación -->
+            </div> 
+        </header>
+        
+        <div class="container">
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Orden</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Nombre</th>
+                            <th>Correo Electrónico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>Producto 1</td>
+                            <td>2</td>
+                            <td>Juan Pérez</td>
+                            <td>juan@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>12346</td>
+                            <td>Producto 2</td>
+                            <td>1</td>
+                            <td>María González</td>
+                            <td>maria@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
             <br><br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br><br>
             
