@@ -255,6 +255,7 @@ footer {
     margin: #07091b;
     border-color: #07091b;
 }
+
 /*////////RESPONSIVE////////////////*/
 @media screen and (max-width: 768px) {
     .superio {
@@ -287,6 +288,40 @@ footer {
 
     .coleccion {
         width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .superio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    input[type="text"] {
+        width: 45%;
+        padding: 8px;
+    }
+
+    .login-button,
+    .caritocompras {
+        margin: 10px 0;
+        width: 45%;
+    }
+
+    main {
+        padding: 10px;
+    }
+    .coleccion {
+        width: 45%; 
         margin: 10px 0;
     }
 }
