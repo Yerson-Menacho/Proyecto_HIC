@@ -8,6 +8,7 @@
 /* Tipografía */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(169, 168, 101, 0.216);
 }
 
 /* Menú Lateral */
@@ -106,7 +107,6 @@ body {
     position: fixed;
     text-align: center;
     bottom: 0;
-    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -182,10 +182,6 @@ nav a {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
-}
-
 .admin-section {
     display: none;
     border: 1px solid #ccc;
@@ -196,7 +192,6 @@ main {
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -305,10 +300,6 @@ nav a {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
-}
-
 .file-manager {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -331,6 +322,7 @@ main {
 /*configuracion*/
 .config-item {
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .config-item label {
@@ -341,30 +333,13 @@ main {
 }
 
 .config-item input {
-    width: 100%;
+    width: 40%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
 }
-
-.config-item button {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.config-item button:hover {
-    background-color: #2980b9;
-}
-
-
 
 .container_1 {
     max-width: 600px;
@@ -374,24 +349,49 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1.h1 {
-    color: #333;
-  }
-  
-  p.p {
-    color: #555;
-  }
-  
-  a.a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
+}
+
+h1.h1 {
+color: #333;
+}
+
+p.p {
+color: #555;
+}
+
+a.a {
+display: inline-block;
+padding: 10px 20px;
+margin-top: 20px;
+text-decoration: none;
+background-color: #3498db;
+color: #fff;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+a.a:hover {
+    background-color: #2980b9;
+}
+
+.container_center{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn_save_config{
+display: inline-block;
+padding: 10px 20px;
+margin-top: 20px;
+text-decoration: none;
+background-color: #3498db;
+color: #fff;
+border-radius: 5px;
+margin-left: 50px;
+transition: 0.3s ease;
+}
+
+.btn_save_config:hover {
+background-color: #2980b9;
+}
+
