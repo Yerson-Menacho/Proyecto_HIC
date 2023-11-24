@@ -325,3 +325,83 @@ footer {
         margin: 10px 0;
     }
 }
+
+
+/*     */ 
+
+.login-button .login-text {
+    display: inline-block;
+  }
+  
+  /* Ocultar el texto cuando la pantalla es pequeña */
+  @media only screen and (max-width: 1200px) {
+    .login-button .login-text {
+      display: none;
+    }
+  }
+
+
+/* */
+
+.caritocompras .login-text2 {
+    display: inline-block;
+  }
+  
+  /* Ocultar el texto cuando la pantalla es pequeña */
+  @media only screen and (max-width: 1200px) {
+    .caritocompras .login-text2 {
+      display: none;
+    }
+  }
+
+
+  /*    */
+
+
+
+  @media screen and (max-width: 768px) {
+    /* Otros estilos para pantallas pequeñas */
+
+    .atencion {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .a, .b, .c, .d, .e {
+        width: 50%; /* Establece el ancho del botón al 50% para que haya dos columnas */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+        padding: 0 10px; /* Agrega un espacio entre los botones */
+        margin-bottom: 10px; /* Añade un margen inferior entre los botones */
+    }
+}
+
+
+
+
+/* Estilos para la sección de botones en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas más pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .buttons a {
+        margin-bottom: 10px; /* Añade espacio entre los íconos en la disposición vertical */
+    }
+    
+    /* Estilos para dividir la sección de botones en dos columnas */
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
+        justify-content: center;
+    }
+
+    .buttons a {
+        margin: 5px; /* Añade espacio entre los íconos en la disposición horizontal */
+    }
+}
+
+
+
